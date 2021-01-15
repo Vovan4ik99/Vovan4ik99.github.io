@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Kalkulator_BMI</title>
+</head>
+<body>
+    <h1>Kalkulator BMI</h1>
+  <form>
+        <p><input class="caption" type="number" step="10" id="Waga" autofocus placeholder="Podaj wage"> Waga(kg) <br></p>
+        <p><input class="caption" type="number" step="10" id="Wzrost" placeholder="Podaj wzrost"> Wzrost(cm) <br></p>
+        <div class="caption" id="wynik"></div>
+        <input class="btn" id="calc" type="button" value="Oblicz">
+        <input class="btn" id="reset" type="reset" value="Wyczyść">
+    </form>
+    <table>
+        <caption>Znaczenie wyniku</caption>
+    <thead>
+        <tr>
+        <th>Mniej niż 16</th><th>16 - 18.5</th><th>18.5 - 25</th><th>25 - 30</th><th>30 - 35</th><th>35 - 40</th><th>Więcej niż 40</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Poważna niedowaga</td><td>Niedowaga</td><td>Normalna waga ciała</td><td>Nadwaga</td><td>Otyłość I stopnia</td><td>Otyłość 2 stopnia</td><td>Otyłość 3 stopnia</td>
+        </tr>
+    </tbody>
+</table>
+<script src="js/script.js"></script> 
+    </body>
+</html>
