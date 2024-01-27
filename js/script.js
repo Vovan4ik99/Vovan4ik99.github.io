@@ -62,7 +62,7 @@ function translate(language) {
         if(selectedLanguageText === 'UA') {
             document.documentElement.className = 'ua-lang';
         } else {
-            document.documentElement.removeClassName('ua-lang');
+            document.documentElement.classList.remove('ua-lang');
         }
 
         const selectedLangElement = document.querySelector('.language-select .selected-lang');;
